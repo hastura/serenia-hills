@@ -1,0 +1,501 @@
+!!!
+%html{:lang => "en"}
+	%head
+		%meta{:charset => "utf-8"}/
+		%meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+		%meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+		%title serenia-hills
+		%link{:href => "assets/css/styles.css", :rel => "stylesheet", :type => "text/css"}/
+		%link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :rel => "stylesheet"}/
+		%link{:rel => "stylesheet", :href => "assets/font/aviano-serif-black.otf"}/
+		%script{:crossorigin => "anonymous", :integrity => "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"}
+		%script{:src => "http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js", :type => "text/javascript"}
+		%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", :type => "text/javascript"}
+		%script{:src => "assets/js/pop-up-gallery.js", :type => "text/javascript"}
+		
+	%body
+		.container.header
+			.row
+				#logo-dev.col-md-12
+					%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/Intiland.png", :alt => "intiland-logo", :class => ['img', 'img-responsive']}/
+		.container-fluid.noSidePadding
+			#hero-img
+				.container-fluid
+					.row
+						%div{:class => ['col-lg-8', 'col-lg-offset-2', 'col-md-10', 'col-md-offset-1']}
+							.heading.text-center
+								%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/serenia-hills-new-whtie-transparent.png", :alt => ""}/
+								-# %h1 Serenia Hills
+								%hr.small
+								%span.subheading Your Private Sanctuary In South Jakarta
+
+		.info-modal-detail
+			/regent
+			#infoOne.modal.fade{:role => "dialog"}
+				.modal-dialog.modal-lg
+					.modal-content
+						.modal-header
+							.row
+								.col-md-6
+									%h3 Regent Type Gallery
+								.col-md-6
+									%button.close{"data-dismiss" => "modal", :type => "button"}
+										%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/cross.svg", :alt => ""}/
+							
+						.modal-body
+							.container
+								%div{:id => ['main_area', 'regentCarouselMainArea']}
+									.row
+										%div{:class => ['col-sm-6', 'slider-thumbs']}
+											%ul.hide-bullets
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "regent-carousel-selector-0"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/01_DSC01270.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "regent-carousel-selector-1"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/DSC01126.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "regent-carousel-selector-2"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/DSC01131.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "regent-carousel-selector-3"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/DSC01151.jpg"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "regent-carousel-selector-4"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/DSC01222.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "regent-carousel-selector-5"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/IMG_3473.JPG"}
+												
+										.col-sm-6
+											.col-xs-12.slider
+												.row
+													.col-sm-12.carousel-bounding-box
+														%div{:class => ['carousel', 'slide'], :id => "regentCarousel"}
+															.carousel-inner
+																.active.item{"data-slide-number" => "0"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/01_DSC01270.JPG"}
+																.item{"data-slide-number" => "1"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/DSC01126.JPG"}
+																.item{"data-slide-number" => "2"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/DSC01131.JPG"}
+																.item{"data-slide-number" => "3"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/DSC01151.jpg"}
+																.item{"data-slide-number" => "4"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/DSC01222.JPG"}
+																.item{"data-slide-number" => "5"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/01.%20REGENT/IMG_3473.JPG"}
+																
+
+																-# %a{:class => ['left', 'carousel-control'], :href => "regentCarousel", :role => "button", "data-slide" => "prev"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-left']}
+
+																-# %a{:class => ['right', 'carousel-control'], :href => "regentCarousel", :role => "button", "data-slide" => "next"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-right']}
+			/signature
+			#infoTwo.modal.fade{:role => "dialog"}
+				.modal-dialog.modal-lg
+					.modal-content
+						.modal-header
+							.row
+								.col-md-6
+									%h3 Signture Type Gallery
+								.col-md-6
+									%button.close{"data-dismiss" => "modal", :type => "button"}
+										%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/cross.svg", :alt => ""}/
+							
+						.modal-body
+							.container
+								%div{:id => ['main_area', 'signatureCarouselMainArea']}
+									.row
+										%div{:class => ['col-sm-6', 'slider-thumbs']}
+											%ul.hide-bullets
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-0"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/IMG_3499.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-1"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/OUTDOOR/IMG_3503.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-2"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/OUTDOOR/IMG_3506.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-3"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/OUTDOOR/IMG_3520.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-4"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/OUTDOOR/IMG_3533.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-5"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3565.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-6"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3583.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-7"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3586.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-8"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3597.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "signature-carousel-selector-9"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3603.JPG"}
+
+										.col-sm-6
+											.col-xs-12.slider
+												.row
+													.col-sm-12.carousel-bounding-box
+														%div{:class => ['carousel', 'slide'], :id => "signatureCarousel"}
+															.carousel-inner
+																.active.item{"data-slide-number" => "0"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/IMG_3499.JPG"}
+																.item{"data-slide-number" => "1"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/OUTDOOR/IMG_3503.JPG"}
+																.item{"data-slide-number" => "2"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/OUTDOOR/IMG_3506.JPG"}
+																.item{"data-slide-number" => "3"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/OUTDOOR/IMG_3520.JPG"}
+																.item{"data-slide-number" => "4"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/OUTDOOR/IMG_3533.JPG"}
+																.item{"data-slide-number" => "5"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3565.JPG"}
+																.item{"data-slide-number" => "6"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3583.JPG"}
+																.item{"data-slide-number" => "7"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3586.JPG"}
+																.item{"data-slide-number" => "8"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3597.JPG"}
+																.item{"data-slide-number" => "9"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/02.%20SIGNATURE/INDOOR/IMG_3603.JPG"}
+
+
+																-# %a{:class => ['left', 'carousel-control'], :href => "signatureCarousel", :role => "button", "data-slide" => "prev"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-left']}
+
+																-# %a{:class => ['right', 'carousel-control'], :href => "signatureCarousel", :role => "button", "data-slide" => "next"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-right']}
+			/titan
+			#infoThree.modal.fade{:role => "dialog"}
+				.modal-dialog.modal-lg
+					.modal-content
+						.modal-header
+							.row
+								.col-md-6
+									%h3 Titan Type Gallery
+								.col-md-6
+									%button.close{"data-dismiss" => "modal", :type => "button"}
+										%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/cross.svg", :alt => ""}/
+							
+						.modal-body
+							.container
+								%div{:id => ['main_area', 'titanCarouselMainArea']}
+									.row
+										%div{:class => ['col-sm-6', 'slider-thumbs']}
+											%ul.hide-bullets
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "titan-carousel-selector-0"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/OUTDOOR/DSC01600.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "titan-carousel-selector-1"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/OUTDOOR/DSC01602.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "titan-carousel-selector-2"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/INDOOR/DSC01623.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "titan-carousel-selector-3"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/INDOOR/DSC01631.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "titan-carousel-selector-4"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/INDOOR/DSC01677.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "titan-carousel-selector-5"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/INDOOR/DSC01702.JPG"}
+
+										.col-sm-6
+											.col-xs-12.slider
+												.row
+													.col-sm-12.carousel-bounding-box
+														%div{:class => ['carousel', 'slide'], :id => "titanCarousel"}
+															.carousel-inner
+																.active.item{"data-slide-number" => "0"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/OUTDOOR/DSC01600.JPG"}
+																.item{"data-slide-number" => "1"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/OUTDOOR/DSC01602.JPG"}
+																.item{"data-slide-number" => "2"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/INDOOR/DSC01623.JPG"}
+																.item{"data-slide-number" => "3"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/INDOOR/DSC01631.JPG"}
+																.item{"data-slide-number" => "4"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/INDOOR/DSC01677.JPG"}
+																.item{"data-slide-number" => "5"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/03.%20TITAN/INDOOR/DSC01702.JPG"}
+																
+
+																-# %a{:class => ['left', 'carousel-control'], :href => "titanCarousel", :role => "button", "data-slide" => "prev"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-left']}
+
+																-# %a{:class => ['right', 'carousel-control'], :href => "titanCarousel", :role => "button", "data-slide" => "next"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-right']}
+			/ultimate
+			#infoFour.modal.fade{:role => "dialog"}
+				.modal-dialog.modal-lg
+					.modal-content
+						.modal-header
+							.row
+								.col-md-6
+									%h3 Ultimate Type Gallery
+								.col-md-6
+									%button.close{"data-dismiss" => "modal", :type => "button"}
+										%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/cross.svg", :alt => ""}/
+							
+						.modal-body
+							.container
+								%div{:id => ['main_area', 'ultimateCarouselMainArea']}
+									.row
+										%div{:class => ['col-sm-6', 'slider-thumbs']}
+											%ul.hide-bullets
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "ultimate-carousel-selector-0"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/04.%20ULTIMATE/DSC01495.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "ultimate-carousel-selector-1"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/04.%20ULTIMATE/DSC01517.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "ultimate-carousel-selector-2"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/04.%20ULTIMATE/IMG_3611.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "ultimate-carousel-selector-3"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/04.%20ULTIMATE/IMG_3624.JPG"}
+												
+										.col-sm-6
+											.col-xs-12.slider
+												.row
+													.col-sm-12.carousel-bounding-box
+														%div{:class => ['carousel', 'slide'], :id => "ultimateCarousel"}
+															.carousel-inner
+																.active.item{"data-slide-number" => "0"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/04.%20ULTIMATE/DSC01495.JPG"}
+																.item{"data-slide-number" => "1"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/04.%20ULTIMATE/DSC01517.JPG"}
+																.item{"data-slide-number" => "2"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/04.%20ULTIMATE/IMG_3611.JPG"}
+																.item{"data-slide-number" => "3"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/04.%20ULTIMATE/IMG_3624.JPG"}
+																
+
+																-# %a{:class => ['left', 'carousel-control'], :href => "ultimateCarousel", :role => "button", "data-slide" => "prev"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-left']}
+
+																-# %a{:class => ['right', 'carousel-control'], :href => "ultimateCarousel", :role => "button", "data-slide" => "next"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-right']}
+			/venture
+			#infoFive.modal.fade{:role => "dialog"}
+				.modal-dialog.modal-lg
+					.modal-content
+						.modal-header
+							.row
+								.col-md-6
+									%h3 Venture Type Gallery
+								.col-md-6
+									%button.close{"data-dismiss" => "modal", :type => "button"}
+										%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/cross.svg", :alt => ""}/
+							
+						.modal-body
+							.container
+								%div{:id => ['main_area', 'ventureCarouselMainArea']}
+									.row
+										%div{:class => ['col-sm-6', 'slider-thumbs']}
+											%ul.hide-bullets
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-0"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/DSC01529.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-1"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/DSC01544.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-2"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/DSC01555.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-3"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/IMG_3685.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-4"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/IMG_3689.JPG"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-5"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/laurel-floor.jpg"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-6"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/melia-floor.jpg"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-7"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/nyssa-floor.jpg"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-8"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/olive-floor.jpg"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-9"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/olive-floor-optional.jpg"}
+												%li.col-sm-3
+													%a{:class => "thumbnail", :id => "venture-carousel-selector-10"}
+														%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/pansy-floor.jpg"}
+
+												
+										.col-sm-6
+											.col-xs-12.slider
+												.row
+													.col-sm-12.carousel-bounding-box
+														%div{:class => ['carousel', 'slide'], :id => "ventureCarousel"}
+															.carousel-inner
+																.active.item{"data-slide-number" => "0"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/DSC01529.JPG"}
+																.item{"data-slide-number" => "1"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/DSC01544.JPG"}
+																.item{"data-slide-number" => "2"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/DSC01555.JPG"}
+																.item{"data-slide-number" => "3"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/IMG_3685.JPG"}
+																.item{"data-slide-number" => "4"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/selected/05.%20VENTURE/IMG_3689.JPG"}
+																.item{"data-slide-number" => "5"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/laurel-floor.jpg"}
+																.item{"data-slide-number" => "6"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/melia-floor.jpg"}
+																.item{"data-slide-number" => "7"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/nyssa-floor.jpg"}
+																.item{"data-slide-number" => "8"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/olive-floor.jpg"}
+																.item{"data-slide-number" => "9"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/olive-floor-optional.jpg"}
+																.item{"data-slide-number" => "10"}
+																	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/serenia-hill/pansy-floor.jpg"}
+																
+
+																-# %a{:class => ['left', 'carousel-control'], :href => "ventureCarousel", :role => "button", "data-slide" => "prev"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-left']}
+
+																-# %a{:class => ['right', 'carousel-control'], :href => "ventureCarousel", :role => "button", "data-slide" => "next"}
+																-# 	%span{:class => ['glyphicon', 'glyphicon-chevron-right']}
+							
+
+		.container-fluid.type-section.noSidePadding
+			.row
+				.container.text-center
+					%h2 
+						Projects Type
+						%span.separator.center-block
+			.row
+				.container.type-section-container
+					.row.type-section-row
+						%button{:class => ['btn', 'btn-action', 'btn-half', 'btn-selection'], :type => "button", "data-toggle" => "modal", "data-dismiss" => "modal", "data-target" => "#infoOne"}
+							.col-md-3.type-section-box.rowOneOne
+								%h2.text-center Regent
+						%button{:class => ['btn', 'btn-action', 'btn-half', 'btn-selection'], :type => "button", "data-toggle" => "modal", "data-dismiss" => "modal", "data-target" => "#infoTwo"}
+							.col-md-3.type-section-box.rowOneTwo
+								%h2.text-center Signature
+						%button{:class => ['btn', 'btn-action', 'btn-half', 'btn-selection'], :type => "button", "data-toggle" => "modal", "data-dismiss" => "modal", "data-target" => "#infoThree"}
+							.col-md-3.type-section-box.rowOneThree
+								%h2.text-center Titan
+						
+				.container.type-section-container
+					.row.type-section-row
+						%button{:class => ['btn', 'btn-action', 'btn-half', 'btn-selection'], :type => "button", "data-toggle" => "modal", "data-dismiss" => "modal", "data-target" => "#infoFour"}
+							.col-md-3.type-section-box.rowTwoOne
+								%h2.text-center Ultimate
+						%button{:class => ['btn', 'btn-action', 'btn-half', 'btn-selection'], :type => "button", "data-toggle" => "modal", "data-dismiss" => "modal", "data-target" => "#infoFive"}
+							.col-md-3.type-section-box.rowTwoTwo
+								%h2.text-center Venture
+						
+			
+		.container-fluid.content-section
+			.row
+				.container.text-center
+					%h2 
+						Access & Neighborhood
+						%span.separator.center-block
+			.row
+				.container
+					.row
+						.col-md-12
+							.navAccess
+								%ul
+									%li
+										%a{:href => ""}
+											Gerbang Tol  
+									%li &#124;
+									%li
+										%a{:href => ""}
+											Shopping Mall
+									%li &#124;
+									%li
+										%a{:href => ""}
+											Airport + MRT
+									%li &#124;
+									%li
+										%a{:href => ""}
+											Sekolah
+									%li &#124;
+									%li
+										%a{:href => ""}
+											Rumah Sakit
+									
+
+			.row
+				.container{:class => ['content-section-inside', 'noSidePadding']}
+					.col-md-12{:class => ['left-section', 'noSidePadding']}
+						%iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d56410.116341656976!2d106.76929284506556!3d-6.191700664292573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sid!4v1463122996529", :style => "border: 0;pointer-events: none;"}
+
+
+
+					.col-md-4{:class => ['right-section', 'noSidePadding']}
+					
+
+
+
+
+
+		
+		.container-fluid
+			.row
+				.col-md-12
+					%div{:id => "to-top-btn", :class => ['pull-right', 'btn', 'btn-action']}
+						#btn-arrow
+							%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/arrow-up-small.svg", :alt => ""}/
+
+		%footer
+			.container-fluid#footer-serenia
+				.row
+					.container
+						.col-sm-12.col-md-8.footer-serenia-text
+							%p PT Intiland Development Tbk
+							%p Intiland Tower, Penthouse Floor - Jl Jendral Sudirman 32, Jakarta 10220. 
+							%p P. +62 21 5701912,5708088, E. info@intiland.com
+						.col-sm-12.col-md-4.footer-serenia-soc-med
+							%ul
+								%li
+									%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/aam-facebook.svg", :alt => "facebook"}/
+								%li
+									%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/aam-twitter.svg", :alt => "twitter"}/
+								%li
+									%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/aam-google%20plus.svg", :alt => "googlePlus"}/
+								-# %li
+								-# 	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/aam-instagram.svg", :alt => "instagram"}/
+								-# %li
+								-# 	%img{:src => "https://d3p0bla3numw14.cloudfront.net/projects/agent-award-my%20/aam-linkedin.svg", :alt => "linkedin"}/
+
+
+
+		%script{:src => "//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"}
+		:javascript
+			$('#to-top-btn').on("click",function(){
+				$('html,body').animate({ scrollTop: 0 }, 'slow', function () {
+				});
+			});
+			$('#to-bottom-btn').on("click",function() {
+				var window_height = $(window).height();
+				var document_height = $(document).height();
+				$('html,body').animate({ scrollTop: document_height - window_height }, '2500', function () {
+				});
+			});
+			
+
